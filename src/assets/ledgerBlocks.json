@@ -1,0 +1,109 @@
+[
+    {
+        "CustID": "TestCustomer12131415",
+        "RealEstateID": "12131415",
+        "LoanAmount": 450000,
+        "Fico": 0,
+        "Insurance": 0,
+        "Appraisal": 0,
+        "Status": "Pending",
+        "TransactionHistory": {
+            "initiateMortgage": "Sat, 03 Nov 2018 10:07:50 UTC"
+        },
+        "Process": "Initiate Mortgage request on  lending ledger for the customer"
+    },
+    {
+        "CustID": "TestCustomer12131415",
+        "RealEstateID": "12131415",
+        "LoanAmount": 450000,
+        "Fico": 677.9235347422339,
+        "Insurance": 0,
+        "Appraisal": 0,
+        "Status": "Pending",
+        "TransactionHistory": {
+            "getFicoScores": "Sat, 03 Nov 2018 10:07:56 UTC",
+            "initiateMortgage": "Sat, 03 Nov 2018 10:07:50 UTC"
+        },
+        "Process": "Request ficoScore for  TestCustomer12131415"
+    },
+    {
+        "RealEstateID": "12131415",
+        "Appraisal": 1.0444747631741697e+06,
+        "NewTitleOwner": "",
+        "TitleStatus": true,
+        "TransactionHistory": {
+            "getAppraisal": "Sat, 03 Nov 2018 10:08:03 UTC",
+            "getTitle": "Sat, 03 Nov 2018 10:05:49 UTC",
+            "initiateBooks": "Sat, 03 Nov 2018 10:00:48 UTC"
+        },
+        "Process": "Request Appraisal"
+    },
+    {
+        "CustID": "TestCustomer12131415",
+        "RealEstateID": "12131415",
+        "LoanAmount": 450000,
+        "Fico": 677.9235347422339,
+        "Insurance": 4089.2663555386152,
+        "Appraisal": 0,
+        "Status": "Pending",
+        "TransactionHistory": {
+            "getFicoScores": "Sat, 03 Nov 2018 10:07:56 UTC",
+            "getInsuranceQuote": "Sat, 03 Nov 2018 10:08:09 UTC",
+            "initiateMortgage": "Sat, 03 Nov 2018 10:07:50 UTC"
+        },
+        "Process": "Request Insurance quote"
+    },
+    {
+        "RealEstateID": "12131415",
+        "Appraisal": 1.0444747631741697e+06,
+        "NewTitleOwner": "",
+        "TitleStatus": false,
+        "TransactionHistory": {
+            "getAppraisal": "Sat, 03 Nov 2018 10:08:03 UTC",
+            "getTitle": "Sat, 03 Nov 2018 10:08:14 UTC",
+            "initiateBooks": "Sat, 03 Nov 2018 10:00:48 UTC"
+        },
+        "Process": "Get Title on books ledger"
+    },
+    {
+        "CustID": "TestCustomer12131415",
+        "RealEstateID": "12131415",
+        "LoanAmount": 450000,
+        "Fico": 677.9235347422339,
+        "Insurance": 4089.2663555386152,
+        "Appraisal": 1.0444747631741697e+06,
+        "Status": "Does not meet criteria for fico and insurance and title an appraised value",
+        "TransactionHistory": {
+            "closeMortage": "Sat, 03 Nov 2018 10:08:21 UTC",
+            "getFicoScores": "Sat, 03 Nov 2018 10:07:56 UTC",
+            "getInsuranceQuote": "Sat, 03 Nov 2018 10:08:09 UTC",
+            "initiateMortgage": "Sat, 03 Nov 2018 10:07:50 UTC"
+        },
+        "Process": "Close the mortgage based on bank criteria"
+    },
+    {
+        "RealEstateID": "12131415",
+        "Appraisal": 1.0444747631741697e+06,
+        "NewTitleOwner": "",
+        "TitleStatus": false,
+        "TransactionHistory": {
+            "changeTitle": "Sat, 03 Nov 2018 10:08:31 UTC",
+            "getAppraisal": "Sat, 03 Nov 2018 10:08:03 UTC",
+            "getTitle": "Sat, 03 Nov 2018 10:08:14 UTC",
+            "initiateBooks": "Sat, 03 Nov 2018 10:00:48 UTC"
+        },
+        "Process": "Change Title on books ledger on"
+    },
+    {
+        "RealEstateID": "12131415",
+        "Address": "12 High Strret, LA 75004 ",
+        "Value": 3.5e+06,
+        "Details": "6503 sq. ft 7 beds 2 baths blah blah",
+        "Owner": "Billy Bob ",
+        "TransactionHistory": {
+            "createRealEstate": "Sat, 03 Nov 2018 10:00:38 UTC",
+            "recordPurchase": "Sat, 03 Nov 2018 10:08:54 UTC"
+        },
+        "Process": "Record purchase on records ledger for new owner"
+    }
+]
