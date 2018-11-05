@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 :root {
-  background-color: #1d2939;
-  width: 80%;
+  background-color: #f9f9f9;
+  width: 100%;
   margin: auto;
-  --sticky-nav-height: 40px;
+  --sticky-nav-height: 60px;
 }

@@ -1,11 +1,12 @@
+<div class="stickyNavWrapper">
+  <nav class="navbarTop"><span>Ledger Data in Blockchain</span></nav>
+</div>
+
 <div class="container">
-  <div class="stickyNavWrapper">
-    <nav class="navbarTop"><span>Ledger Data in Blockchain</span></nav>
-  </div>
   <div class="col-lg-12" style="margin: 16px 0px" *ngFor="let block of ledgerBlocks">
     <mat-card class="example-card">
 
-      <mat-card-header style="background-color:#C4ADFF">
+      <mat-card-header>
 
         <div mat-card-avatar class="imageContainer"> <img [src]="block.images"></div>
 
@@ -19,18 +20,18 @@
 
       <mat-card-content *ngIf="!collapsed">
 
-        <pre style="color: #fff; padding:20px;margin:10px;background-color:#46698D ;font-weight:bold;letter-spacing: 0.75px;font-size:12px">{{block | json}}</pre>
+        <pre style="color: #fff; padding:20px;margin:10px;background-color:#152678 ;font-weight:bold;letter-spacing: 0.75px;font-size:12px">{{block | json}}</pre>
 
       </mat-card-content>
 
       <mat-card-actions>
 
-        <button mat-raised-button (click)="collapsed=true" style="background-color:#7F91E8;color:#fff;">Collapse
+        <button mat-raised-button (click)="collapsed=true" style="background-color:#152678;color:#fff;margin-left:15px;">Collapse
           card
           content
         </button>
 
-        <button mat-raised-button (click)="collapsed=false" style="background-color: #7F91E8;color:#fff;">Uncollapse
+        <button mat-raised-button (click)="collapsed=false" style="background-color: #152678;color:#fff;">Uncollapse
           card content</button>
 
       </mat-card-actions>

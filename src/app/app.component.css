@@ -1,9 +1,30 @@
-.container- {
+.container {
   height: 100vh;
-  width: 80vw;
+  width: 90vw;
+  margin: 0 auto;
 }
 .example-card {
-  background-color: #ee6456;
+  background-color: #fff;
+}
+
+.mat-card-header {
+  border-radius: 5px !important;
+  border: 1px solid #4c7ea2;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.card-title {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
 }
 
 .example-header-image {
@@ -58,8 +79,8 @@ mat-card-header {
   font-family: "Lobster", cursive;
   margin: auto;
   padding: 4px;
-  box-shadow: 2px;
-  background-color: #7f91e8;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #486f97;
   color: #fff;
   display: flex;
   align-items: center;
@@ -68,6 +89,8 @@ mat-card-header {
   font-size: 30px;
   overflow: hidden;
   z-index: 1;
+  position: fixed;
+  top: 0;
 }
 
 .stickyNavWrapper {
